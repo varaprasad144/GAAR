@@ -13,7 +13,21 @@ st.set_page_config(
     page_icon="🚗",
     layout="wide"
 )
-
+# Add background image
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("assets/bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # Custom CSS
 st.markdown("""
     <style>
